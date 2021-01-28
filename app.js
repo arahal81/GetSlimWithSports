@@ -9,18 +9,18 @@ while (fav !== 'football' && fav !== 'tennis' && fav !== 'basketball') {
     fav = prompt('please write only football or tennis or basketball !');
 }
 var img = '';
-if (fav == "basketball") {
-    img = '<img src="Uplods\basketball1.jpg" />';
+if (fav === "basketball") {
+    img = '<img src="uplods/basketball1.jpg" />';
 }
-else if (fav == "football") {
-    img = '<img src="Uplods\football.jpg" />';
+else if (fav === "football") {
+    img = '<img src="uplods/football.jpg" />';
 }
 else {
-    img = '<img src="Uplods\tennis.jpg" />';
+    img = '<img src="uplods/tennis.jpg" />';
 }
-var imgCount = prompt('enter numper of images you need!')
+var imgCount = prompt('enter numper of images you needed!')
 var sumImg = '';
-for (let i = 0; i < imgCount; i++) {
+for (var i = 0; i < imgCount; i++) {
 
     sumImg += img;
 
