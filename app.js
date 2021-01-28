@@ -1,20 +1,29 @@
 alert('Welcom to Git Slim With Sport Website');
 var nickName = prompt('Please enter your nickName here');
-nickName = prompt('the nick name is empty Please enter your nickName again');
+while (nickName == '') {
+    nickName = prompt('the nick name is empty Please enter your nickName again');
+}
 
-
-
-
-
-var age = prompt('Hi ' + nickName + ',  Please enter your age here');
-if (age < 18) {
-    alert('website content is not appropriate for your age');
-
-} else if (age > 60) {
-    alert('website content is not appropriate for your age your age should be between 18> and < 60');
+var fav = prompt('Hi ' + nickName + ', pls enter your favorit spot football or tennis or basketball');
+while (fav !== 'football' && fav !== 'tennis' && fav !== 'basketball') {
+    fav = prompt('please write only football or tennis or basketball !');
+}
+var img = '';
+if (fav == "basketball") {
+    img = '<img src="Uplods\basketball1.jpg" />';
+}
+else if (fav == "football") {
+    img = '<img src="Uplods\football.jpg" />';
 }
 else {
-    alert('Enjoy');
+    img = '<img src="Uplods\tennis.jpg" />';
 }
-document.writeln('Your name: ' + nickName + '.');
-document.writeln('Your Age : ' + age + '.');
+var imgCount = prompt('enter numper of images you need!')
+var sumImg = '';
+for (let i = 0; i < imgCount; i++) {
+
+    sumImg += img;
+
+}
+document.writeln('Your name: ' + nickName + '.' + '<br>');
+document.writeln(sumImg);
