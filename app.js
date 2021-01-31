@@ -9,7 +9,7 @@ function showImges() {
         nickName = prompt('the nick name is empty Please enter your nickName again');
     }
 
-    var fav = prompt('Hi ' + nickName + ', pls enter your favorit spot football or tennis or basketball');
+    var fav = prompt('Hi ' + nickName + ', pls enter your favorit sport football or tennis or basketball');
     while (fav !== 'football' && fav !== 'tennis' && fav !== 'basketball') {
         fav = prompt('please write only football or tennis or basketball !');
     }

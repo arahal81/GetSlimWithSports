@@ -17,8 +17,20 @@
     background-color:royalblue;
     color: rgb(0, 0, 0);
 }
+footer{text-align: center;}
 footer ul li
 {
     display: inline-block;
     padding:1cm;
+}
+
+header table tr td a
+{
+    text-decoration: none;
+}
+main{text-align: center;}
+footer  ul li a
+{
+    text-decoration: none;
+    color: #be3930;
 }
